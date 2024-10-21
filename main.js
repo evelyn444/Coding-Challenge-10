@@ -9,3 +9,9 @@ modelSelector.addEventListener('change', function(event){ // changes price on sc
     priceElement.textContent = `$${selectedPrice}`; 
 }
 );
+//Task 2: Handle Stock Availability
+const stockAvailability = {
+    normal: {price: 30, stock: 4},
+    ripped: {price:35, stock:0},
+    light wash: {price: 40, stock: 5}
+};
