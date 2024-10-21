@@ -9,9 +9,21 @@ modelSelector.addEventListener('change', function(event){ // changes price on sc
     priceElement.textContent = `$${selectedPrice}`; 
 }
 );
-//Task 2: Handle Stock Availability
+//Task 3: Handle Stock Availability
 const stockAvailability = {
     normal: {price: 30, stock: 4},
     ripped: {price:35, stock:0},
-    light wash: {price: 40, stock: 5}
+    light: {price: 40, stock: 5} //stock availibility
 };
+//Task 4: Create a Checkout Event
+purchaseButton.addEventListener ('click', function(){
+    const selectedOption = modelSelector.options[modelSelector.selectedIndex];
+    const stock = selectedOption.getAttribute('data-stock');
+    
+    if(stock > 0){ 
+        alert('Thank you for purchasing'); //alerts if item is in stock and purchased
+    }
+    else {
+        alert('Sorry this item is out of stock'); //alerts if item is out of stock
+    }
+});
