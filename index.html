@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reatil Store</title>
+    <title>ECommerce Event Driven Product Management</title>
 </head>
 <body>
-    <h1>Products</h1>
+    <!--Task 1 -->
     <h2 id="product-name">Jeans</h2>
-    <p id="price-display">Price:</p>
-<button id="small">Small</button>
-<button id="medium">Medium</button>
-<button id="large">Large</button>
-<br>
-</br>
-<button id="purchase">Purchase</button>
+    <p id="product-price">$30.00</p>
+    <select id="model-selector">
+        <option value="30" data-stock="in">Normal - $30.00 (In Stock)</option>
+        <option value="35" data-stock="out">Ripped - $35.00 (Out of Stock)</option>
+        <option value="40" data-stock="in">Light Wash - $40.00 (In Stock)</option>
+    </select>
+
+    <!--Purchase button-->
+    <button id="purchase-button">Purchase</button>
+
     <script src="main.js"></script>
+
 
 </body>
 </html>
